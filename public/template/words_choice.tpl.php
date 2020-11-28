@@ -10,7 +10,7 @@
 <body>
 
 <div>Blabla choisissez les mots</div>
-<form action="mad_libs.php" method="post" class="form">
+<form action="../mad_libs.php" " method="post" class="form">
     <?php foreach ($word_types as $word_type) : ?>
     <div class="form-group">
         <label for="<?= $word_type ?>">Choisir un <?= $word_type ?> :</label>

@@ -1,6 +1,6 @@
 <?php
 
-$word_types = ["nom", "adjectif", "verbe"];
+$word_types = ['nom', 'adjectif', 'verbe'];
 
 
-include "../template/words_choice.tpl.php";
+include "template/words_choice.tpl.php";
