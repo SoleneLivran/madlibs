@@ -9,8 +9,12 @@
 </head>
 <body>
 
-<div>Blabla bienvenue</div>
-<div>Blabla -> <a href="words_choice.php">choisir les mots</a></div>
+<div>
+    <h1>Bienvenue sur le site</h1>
+    <p>Vous allez choisir des mots, au hasard, qui viendront remplir un texte pour un résultat...sans doute surprenant !</p>
+    <p>À venir : le choix du texte qui sera complété par vos mots</p>
+</div>
+<div>Pour le choix, c'est par ici : <a href="words_choice.php">choisir les mots</a></div>
 
 </body>
 </html>
