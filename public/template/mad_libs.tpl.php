@@ -10,15 +10,8 @@
 <body>
 
 <div class="story">
-    <h1>Le <?= $adjective ?> <?= $noun ?></h1>
     <p>
-        Il était une fois un <?= $adjective ?> <?= $noun ?>.
-    </p>
-    <p>
-        Il aimait <?= $verb ?>.
-    </p>
-    <p>
-        C'était un <?= $adjective ?> <?= $noun ?> heureux.
+        <?= $text ?>
     </p>
 </div>
 <a href="index.php">Retour à l'accueil</a>
