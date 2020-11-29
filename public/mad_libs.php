@@ -10,7 +10,7 @@ foreach ($matches[0] as $match) {
     $text = str_replace($match, $_POST[trim($match, "\%")], $text);
 }
 
-$text = str_replace("\n", "<br>", $text);
+$text = nl2br($text);
 $text = str_replace("*title_start*", "<h1>", $text);
 $text = str_replace("*title_end*", "</h1>", $text);
 
