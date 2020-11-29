@@ -12,17 +12,17 @@
 <div>
     <h1>Bienvenue sur le site</h1>
     <p>Vous allez choisir des mots, au hasard, qui viendront remplir un texte pour un résultat...sans doute surprenant !</p>
-    <form action="words_choice.php">
+    <form action="words_choice.php" method="post">
         <label for="story">Choix du texte qui sera complété par vos mots :</label>
         <select name="story" id="story">
+            <!--Make all avalaible stories a dropdown option-->
             <?php foreach ($available_stories as $story) : ?>
-                <option value="<?= $story['title'] ?>"><?= $story['title'] ?></option>
+                <option value="<?= $story['text'] ?>"><?= $story['title'] ?></option>
             <?php endforeach ?>
         </select>
         <input type="submit" value="Valider">
     </form>
 </div>
-<!--<div>Pour le choix, c'est par ici : <a href="words_choice.php">choisir les mots</a></div>-->
 
 </body>
 </html>

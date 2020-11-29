@@ -2,14 +2,19 @@
 
 // replace placeholders by data in $_post
 
-$text = "*title_start* Le %adjectif_masculin_singulier_1% %nom_commun_masculin_singulier_1% *title_end* Il était une fois un %adjectif_masculin_singulier_1% %nom_commun_masculin_singulier_1%.\nIl aimait %verbe_infinitif%.\nC'était un %adjectif_masculin_singulier_2% %nom_commun_masculin_singulier_2% heureux.";
+// Retrieve chosen text
+$text = $_POST['text'];
 
+// Find all the placeholders in the text
 preg_match_all('/(\%.*?\%)/', $text, $matches);
 
+// For each placeholder in the text : replace with the corresponding value from $_POST
+// Value in $_POST =same name as the placeholder, but without the "%"s
 foreach ($matches[0] as $match) {
     $text = str_replace($match, $_POST[trim($match, "\%")], $text);
 }
 
+// Format database's text with html tags
 $text = nl2br($text);
 $text = str_replace("*title_start*", "<h1>", $text);
 $text = str_replace("*title_end*", "</h1>", $text);

@@ -1,19 +1,23 @@
 <?php
 
-$text = "*title_start*Le %adjectif_masculin_singulier_1% %nom_commun_masculin_singulier_1%*title_end* Il était une fois un %adjectif_masculin_singulier_1% %nom_commun_masculin_singulier_1%.\nIl aimait %verbe_infinitif%.\nC'était un %adjectif_masculin_singulier_2% %nom_commun_masculin_singulier_2% heureux.";
+// Current text = story chosen from index
+$text = $_POST['story'];
 
-// all the types or words needed for the text
+// Prepare an array to store all the types or words needed for the text
 $word_types = [];
 
-// find each placeholder in the text
+// Find each placeholder in the text
 preg_match_all('/(\%.*?\%)/', $text, $matches);
 
+// Add each placeholder, without "%" delimiter, to the list of word types needed for the text
 foreach ($matches[0] as $match) {
     $word_types[] = trim($match, '\%');
 }
 
+// Remove duplicates
 $word_types = array_unique($word_types);
 
+// Sort word types in alphabetical order
 sort($word_types);
 
 include "template/words_choice.tpl.php";
