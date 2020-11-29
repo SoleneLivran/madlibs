@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO('mysql:host=localhost;dbname=mad_libs', 'root', 'rootroot');
+include "../config.php";
 
 // get all available stories in the database
 $sql = 'SELECT * FROM story';
