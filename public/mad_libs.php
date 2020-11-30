@@ -17,6 +17,7 @@ foreach ($matches[0] as $match) {
 // Format database's text with html tags
 $text = nl2br($text);
 $text = str_replace("*title_start*", "<h1>", $text);
-$text = str_replace("*title_end*", "</h1>", $text);
+$text = str_replace("*title_end*", "</h1><p>", $text);
+$text = $text . "</p>";
 
 include "template/mad_libs.tpl.php";

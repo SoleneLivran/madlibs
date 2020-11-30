@@ -15,56 +15,56 @@
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="page-title">
-        <h1>Bienvenue !</h1>
-    </div>
-
-    <div class="custom-shape-divider-top-1606758103">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-        </svg>
-    </div>
-
-    <div class="page-content">
-        <div class="rules rules-intro">
-            <p>
-                Voici un petit jeu pour créer des histoires.
-            <br>
-                Comment jouer ? C’est très simple !
-            </p>
+        <div class="page-title">
+            <h1>Bienvenue !</h1>
         </div>
 
-        <div class="rules rules-detail">
-            <p>
-                <i class="fas fa-arrow-right"></i> Choisis un thème, dans la liste en dessous (clique sur la petite flèche v pour voir tous les thèmes)
-            </p>
-            <p>
-                <i class="fas fa-arrow-right"></i> Ensuite, on va te demander plusieurs mots. Écris les premiers mots qui te passent par la tête !
-            </p>
-            <p>
-                <i class="fas fa-arrow-right"></i> Valide tes mots et tu verras une petite histoire, avec tes mots dedans !
-            </p>
+        <div class="custom-shape-divider-top-1606758103">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
         </div>
 
-            <form action="words_choice.php" method="post" class="story-choice-form">
-                <select name="story" id="story" required>
-                    <option value="" disabled selected>Choisis un thème ici</option>
-                    <!--Make all avalaible stories a dropdown option-->
-                    <?php foreach ($available_stories as $story) : ?>
-                        <div class="form-group">
-                            <option value="<?= $story['text'] ?>"><?= $story['title'] ?></option>
-                        </div>
-                    <?php endforeach ?>
-                </select>
-                <div class="form-group">
-                    <input type="submit" value="Valider !" class="submit-button">
-                </div>
-            </form>
-    </div>
+        <div class="page-content">
+            <div class="rules rules-intro">
+                <p>
+                    Voici un petit jeu pour créer des histoires.
+                <br>
+                    Comment jouer ? C’est très simple !
+                </p>
+            </div>
 
-</div>
+            <div class="rules rules-detail">
+                <p>
+                    <i class="fas fa-arrow-right"></i> Choisis un thème, dans la liste en dessous (clique sur la petite flèche v pour voir tous les thèmes)
+                </p>
+                <p>
+                    <i class="fas fa-arrow-right"></i> Ensuite, on va te demander plusieurs mots. Écris les premiers mots qui te passent par la tête !
+                </p>
+                <p>
+                    <i class="fas fa-arrow-right"></i> Valide tes mots et tu verras une petite histoire, avec tes mots dedans !
+                </p>
+            </div>
+
+                <form action="words_choice.php" method="post" class="story-choice-form">
+                    <select name="story" id="story" required>
+                        <option value="" disabled selected>Choisis un thème ici</option>
+                        <!--Make all avalaible stories a dropdown option-->
+                        <?php foreach ($available_stories as $story) : ?>
+                            <div class="form-group">
+                                <option value="<?= $story['text'] ?>"><?= $story['title'] ?></option>
+                            </div>
+                        <?php endforeach ?>
+                    </select>
+                    <div class="form-group">
+                        <input type="submit" value="Valider !" class="submit-button">
+                    </div>
+                </form>
+        </div>
+
+    </div>
 
 </body>
 </html>
