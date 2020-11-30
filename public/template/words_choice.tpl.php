@@ -40,19 +40,19 @@
 
         <div class="words-choice">
             <p> Choisis...</p>
-            <form action="../mad_libs.php" " method="post" class="form">
+            <form action="../mad_libs.php" method="post" class="words-choice-form">
                 <!--Create a form input for each needed word type in the text, for the user to choose the words-->
                 <?php foreach ($word_types as $word_type) : ?>
-                <div class="form-group">
+                <div class="form-group word-choice">
                     <!--Remove "_" in word types names so it's more understandable for human users-->
-                    <label for="<?= $word_type ?>">Choisir un <?= str_replace('_', ' ', $word_type) ?> :</label>
-                    <input type="text" name="<?= $word_type ?>" id="<?= $word_type ?>" required>
+                    <label class="word-type-label" for="<?= $word_type ?>">Un <?= str_replace('_', ' ', $word_type) ?> :</label>
+                    <input class="word-input" type="text" name="<?= $word_type ?>" id="<?= $word_type ?>" required>
                 </div>
                 <?php endforeach ?>
                 <!--hidden input to pass chosen text to next page. TODO : with session-->
                 <input type="hidden" name="text" id="text" value="<?= $text ?>">
                 <div class="form-group">
-                    <input type="submit" value="Valider">
+                    <input type="submit" value="Valider" class="submit-button">
                 </div>
             </form>
         </div>
