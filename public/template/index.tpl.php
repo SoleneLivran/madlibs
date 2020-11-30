@@ -48,15 +48,19 @@
             </p>
         </div>
 
-            <form action="words_choice.php" method="post">
+            <form action="words_choice.php" method="post" class="story-choice-form">
                 <select name="story" id="story" required>
                     <option value="" disabled selected>Choisis un thème ici</option>
                     <!--Make all avalaible stories a dropdown option-->
                     <?php foreach ($available_stories as $story) : ?>
-                        <option value="<?= $story['text'] ?>"><?= $story['title'] ?></option>
+                        <div class="form-group">
+                            <option value="<?= $story['text'] ?>"><?= $story['title'] ?></option>
+                        </div>
                     <?php endforeach ?>
                 </select>
-                <input type="submit" value="Valider !">
+                <div class="form-group">
+                    <input type="submit" value="Valider !" class="submit-button">
+                </div>
             </form>
     </div>
 
