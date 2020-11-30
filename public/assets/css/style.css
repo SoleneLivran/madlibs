@@ -36,13 +36,13 @@ body {
 
 .page-content {
     margin-top: 280px;
-    max-width: 40%;
+    max-width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
 
 .rules {
-    line-height: 2rem;
+    line-height: 1.5rem;
     text-align: center;
 }
 
@@ -95,7 +95,7 @@ button, input, select, textarea {
 }
 
 .word-choice {
-    margin-bottom: 0.5rem;
+    margin: 0 1rem 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -112,6 +112,7 @@ button, input, select, textarea {
 
     .page-content {
         margin-top: 200px;
+        max-width: 70%;
     }
 }
 
@@ -127,6 +128,7 @@ button, input, select, textarea {
 
     .page-content {
         margin-top: 170px;
+        max-width: 80%;
     }
 }
 
@@ -143,5 +145,20 @@ button, input, select, textarea {
 
     .page-content {
         margin-top: 150px;
+        max-width: 100%;
+    }
+
+    .rules-intro {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+
+    .rules-detail {
+        margin: 1rem;
+    }
+
+    .rules-detail p {
+        margin-bottom: 1rem;
     }
 }
