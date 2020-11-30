@@ -1,0 +1,1 @@
+cp config.heroku.php config.php
