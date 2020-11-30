@@ -1,0 +1,110 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    background-color: #E8F4FF;
+}
+
+.custom-shape-divider-top-1606758103 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1606758103 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1606758103 .shape-fill {
+    fill: #73B6DC;
+}
+
+.page-title {
+    color: #FFFFFF;
+    font-size: 4rem;
+    position: absolute;
+    left: 10rem;
+    top: 5rem;
+}
+
+.page-content {
+    margin-top: 280px;
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.rules-intro {
+    font-size: 1.5rem;
+    margin: 1rem;
+    line-height: 2rem;
+}
+
+.rules-detail {
+    line-height: 2rem;
+    margin: 2rem;
+    text-align: left;
+}
+
+.fa-arrow-right {
+    color: #73B6DC;
+    margin-right: 0.5rem;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+@media (max-width: 1100px) {
+    .page-title {
+        left: 5rem;
+        top: 2.5rem
+    }
+
+    .custom-shape-divider-top-1606758103 svg {
+        height: 200px;
+    }
+
+    .page-content {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    .page-title {
+        font-size: 3rem;
+        left: 2rem;
+    }
+
+    .custom-shape-divider-top-1606758103 svg {
+        height: 150px;
+    }
+
+    .page-content {
+        margin-top: 170px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2rem;
+        left: 1.5rem;
+        top: 1rem;
+    }
+
+    .custom-shape-divider-top-1606758103 svg {
+        height: 100px;
+    }
+
+    .page-content {
+        margin-top: 150px;
+    }
+}
