@@ -1,7 +1,12 @@
 <?php
 
 // Current text = story chosen from index
-$text = $_POST['story'];
+if ($_POST) {
+    $text = $_POST['story'];
+} else {
+    // if no text chosen, redirect to homepage
+    header('Location: index.php');
+}
 
 // Prepare an array to store all the types or words needed for the text
 $word_types = [];

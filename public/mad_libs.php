@@ -3,7 +3,12 @@
 // replace placeholders by data in $_post
 
 // Retrieve chosen text
-$text = $_POST['text'];
+if ($_POST) {
+    $text = $_POST['text'];
+} else {
+    // if no text chosen, redirect to homepage
+    header('Location: index.php');
+}
 
 // Find all the placeholders in the text
 preg_match_all('/(\%.*?\%)/', $text, $matches);
