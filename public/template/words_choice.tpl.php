@@ -52,12 +52,14 @@
                     <!--hidden input to pass chosen text to next page. TODO : with session-->
                     <input type="hidden" name="text" id="text" value="<?= $text ?>">
                     <div class="form-group">
-                        <input type="submit" value="Valider" class="submit-button">
+                        <input type="submit" value="Valider !" class="submit-button">
                     </div>
                 </form>
             </div>
 
         </div>
+
+        <?php include "inc/footer.tpl.php"; ?>
 
     </div>
 

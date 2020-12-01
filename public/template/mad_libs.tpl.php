@@ -30,9 +30,14 @@
             <div class="story">
                     <?= $text ?>
             </div>
-            <a href="index.php" class="back-to-menu">Retour à l'accueil</a>
+
+            <div class="back-to-menu">
+                <a href="index.php" class="back-to-menu-button">Retour à l'accueil</a>
+            </div>
 
         </div>
+
+        <?php include "inc/footer.tpl.php"; ?>
 
     </div>
 

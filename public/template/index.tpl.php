@@ -64,7 +64,10 @@
                 </form>
         </div>
 
+        <?php include "inc/footer.tpl.php"; ?>
+
     </div>
+
 
 </body>
 </html>
