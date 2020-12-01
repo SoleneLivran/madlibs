@@ -3,7 +3,7 @@
 include "../config.php";
 
 // get all available stories in the database
-$sql = 'SELECT * FROM story';
+$sql = 'SELECT * FROM story ORDER BY title';
 $req = $pdo->query($sql);
 $available_stories = $req->fetchAll();
 
