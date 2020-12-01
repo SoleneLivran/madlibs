@@ -1,3 +1,3 @@
 <?php
-$dsn = getenv("DATABASE_URL");
+$dsn = getenv("DATABASE_DSN");
 $pdo = new PDO($dsn);
