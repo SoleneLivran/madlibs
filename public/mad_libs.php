@@ -16,7 +16,7 @@ preg_match_all('/(\%.*?\%)/', $text, $matches);
 // For each placeholder in the text : replace with the corresponding value from $_POST
 // Value in $_POST =same name as the placeholder, but without the "%"s
 foreach ($matches[0] as $match) {
-    $text = str_replace($match, $_POST[trim($match, "\%")], $text);
+    $text = str_replace($match, "<span class='my-word'>".$_POST[trim($match, "\%")]."</span>", $text);
 }
 
 // Format database's text with html tags
