@@ -1,11 +1,11 @@
 <footer class="footer">
-    <div class="footer-element website-info">
-        <a class="footer-link" href="">Infos et contact</a>
+    <div class="footer-element footer-website-info">
+        <a class="footer-link" href="../../info.php">Infos et contact</a>
     </div>
-    <div class="footer-element separator">
+    <div class="footer-element footer-separator">
         |
     </div>
-    <div class="footer-element developper-info">
+    <div class="footer-element footer-developer-info">
         Développé par Solène Livran
     </div>
 </footer>

@@ -41,13 +41,45 @@ body {
     margin-left: auto;
 }
 
-.rules{
+.rules,
+.info {
     line-height: 1.5rem;
 }
 
-.rules-intro {
+.rules-intro,
+.project-info-intro {
     font-size: 1.5rem;
     margin: 1rem;
+}
+
+.developer-info {
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.developer-contact,
+.project-info-detail,
+.project-info-development {
+    margin: 1rem;
+}
+
+.developer-contact {
+    margin-bottom: 3rem;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid rgba(115, 182, 220, 0.5);
+    margin: 2rem 1rem;
+}
+
+.info {
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+.info a {
+    color: #6795C7;
 }
 
 .rules-detail {
@@ -73,7 +105,7 @@ button, input, select, textarea {
 }
 
 .submit-button,
-.back-to-menu {
+.back-to-menu-button {
     font-size: 1.2rem;
     padding: 5px 2rem;
     margin: 1.5em;
@@ -85,9 +117,15 @@ button, input, select, textarea {
 }
 
 .submit-button:active,
-.back-to-menu:active {
+.back-to-menu-button:active {
     transform: translate(2px, 2px);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-menu-button {
+    display: block;
+    margin: 0 auto 2.5em auto;
+    width: 200px;
 }
 
 .words-choice p {
@@ -124,7 +162,6 @@ button, input, select, textarea {
 }
 
 .footer {
-    /*background-color: rgba(115, 182, 220, 0.3);*/
     background-color: #73B6DC;
     overflow: hidden;
     position: fixed;

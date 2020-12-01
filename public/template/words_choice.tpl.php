@@ -59,9 +59,9 @@
 
         </div>
 
-    </div>
+        <?php include "inc/footer.tpl.php"; ?>
 
-    <?php include "inc/footer.tpl.php"; ?>
+    </div>
 
 </body>
 </html>
