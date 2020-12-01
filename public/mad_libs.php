@@ -8,6 +8,7 @@ if ($_POST) {
 } else {
     // if no text chosen, redirect to homepage
     header('Location: index.php');
+    die();
 }
 
 // Find all the placeholders in the text
