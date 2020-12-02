@@ -96,6 +96,9 @@ hr {
 button, input, select, textarea {
     font-family: inherit;
     font-size: 100%;
+}
+
+select {
     background-color: #FFFFFF;
 }
 
