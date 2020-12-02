@@ -31,9 +31,9 @@
                     <?= $text ?>
             </div>
 
-            <div class="back-to-menu">
-                <a href="index.php" class="back-to-menu-button">Retour à l'accueil</a>
-            </div>
+            <button class="button back-to-menu">
+                <a href="index.php">Retour à l'accueil</a>
+            </button>
 
         </div>
 

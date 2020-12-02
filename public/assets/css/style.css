@@ -105,27 +105,25 @@ button, input, select, textarea {
     outline: none;
 }
 
-.submit-button,
-.back-to-menu-button {
+.button {
     font-size: 1.2rem;
     padding: 5px 2rem;
-    margin: 1.5em;
+    margin: 1.5rem auto 2.5rem auto;
     border-radius: 10px;
     background-color: #73B6DC;
     color: #FFFFFF;
     border: none;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    display: block;
 }
 
-.submit-button:active,
-.back-to-menu-button:active {
+.button:active {
     transform: translate(2px, 2px);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.back-to-menu-button {
-    display: block;
-    margin: 0 auto 2.5em auto;
+.back-to-menu {
+    margin: 4rem auto 2.5rem auto;
     width: 200px;
 }
 
@@ -152,10 +150,6 @@ button, input, select, textarea {
 .story h1 {
     font-size: 1.5rem;
     margin-bottom: 1em;
-}
-
-.story p {
-    margin-bottom: 4em;
 }
 
 .my-word {

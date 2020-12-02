@@ -59,7 +59,7 @@
                         <?php endforeach ?>
                     </select>
                     <div class="form-group">
-                        <input type="submit" value="Valider !" class="submit-button">
+                        <input type="submit" value="Valider !" class="button submit-button">
                     </div>
                 </form>
         </div>
