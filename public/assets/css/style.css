@@ -258,3 +258,19 @@ select {
         font-size: 0.8em;
     }
 }
+
+@media (max-width: 350px) {
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .custom-shape-divider-top-1606758103 svg {
+        height: 80px;
+    }
+
+    .page-content {
+        margin-top: 90px;
+    }
+
+
+}
